@@ -1,8 +1,7 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from 'firebase/firestore';
+import { getAuth } from "firebase/auth";
+import { getStorage } from 'firebase/storage';
 
 
 const firebaseConfig = {
@@ -17,3 +16,9 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
+const db = getFirestore(firebaseApp)
+const auth = getAuth()
+const storage = getStorage();
+  
+export {auth, storage};
+export default db;
