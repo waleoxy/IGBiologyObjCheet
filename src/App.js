@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './HomePage';
+import {Switch, Route} from "react-router"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar/>
       <Switch>
       <HomePage/>
+      </Switch>
     </div>
   );
 }
