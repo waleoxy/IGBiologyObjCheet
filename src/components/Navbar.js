@@ -24,7 +24,9 @@ function Navbar() {
                    
                     <li key={link.id} className="nav__link">
                         <Link to={link.path}>
-                            {link.text}
+                            <span className="nav__link__text">
+                                {link.text}
+                            </span>
                         </Link>
 
                     </li>

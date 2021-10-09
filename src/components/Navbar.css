@@ -25,7 +25,17 @@
   font-size: 1.2rem;
   padding: 5px 7px;
   text-decoration: none;
-  color: #fff;
+  color: white;
+}
+.nav__link__text {
+  font-size: 1.2rem;
+  padding: 5px 7px;
+  text-decoration: none;
+  color: white;
+}
+.nav__link__text:hover {
+  padding: 7px 9px;
+  color: rgb(8, 255, 243);
 }
 .nav__logo {
   width: 80px;

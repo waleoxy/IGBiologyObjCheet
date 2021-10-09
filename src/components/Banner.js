@@ -41,16 +41,11 @@ console.log('img', bannerImage);
               </div>
              
           </div>
-           <div className="slideshowDots">
-          {bannerImage.map((_, idx) => (
-            <div key={idx} className="slideshowDot"></div>
-          ))}
-          </div>
-        <div className="banner__fadeBottom"/>
+             <div className="banner__fadeBottom"/>
         </header>
-
       ))}
       </div>
+     
       </div>
     )
 }

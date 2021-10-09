@@ -2,5 +2,6 @@
   margin: 0;
 }
 .app {
-  background-color: rgb(212, 41, 41);
+  height: 100vh;
+  background-color: rgb(226, 223, 223);
 }
