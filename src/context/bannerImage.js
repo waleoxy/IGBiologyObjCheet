@@ -2,26 +2,26 @@
 export const bannerImage = [
     {
         id: 1,
-        url:"img/cell.jpg"
+        url:"img/transport.jpg"
     },
     {
         id: 2,
-        url:"img/cell.jpg"
+        url:"img/biologybanner.jpg"
     },
     {
         id: 3,
-        url:"img/cell.jpg"
+        url:"img/ecology.jpg"
     },
     {
         id: 4,
-        url:"img/cell.jpg"
+        url:"img/genetics.jpg"
     },
     {
         id: 5,
-        url:"img/cell.jpg"
+        url:"img/nervous.jpg"
     },
     {
         id: 6,
-        url:"img/cell.jpg"
+        url:"img/digestion.jpg"
     }
 ]

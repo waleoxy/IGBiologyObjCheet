@@ -5,7 +5,7 @@ import Slider from './components/Slider'
 function HomePage() {
     return (
         <div className="home">
-            <Slider/>
+            <Banner/>
         </div>
     )
 }

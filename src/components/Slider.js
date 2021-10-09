@@ -7,7 +7,9 @@ function Slider() {
     <div className="slider">
         <div className="slideContent">
             {bannerImage.map((image, index) => (
-            <img key={Image.index} src={image.url} className="slide"/>
+            <div className="slide">
+            <img key={Image.index} src={image.url} />
+            </div>
             ))}
         </div>
     </div>

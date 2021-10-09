@@ -5,8 +5,8 @@
   padding: 20px;
   width: 100%;
   height: 70px;
-  z-index: 100;
-  background-color: rgb(47, 6, 6);
+  z-index: 200;
+  background-color: rgb(2, 96, 124);
 }
 
 .nav__content {
