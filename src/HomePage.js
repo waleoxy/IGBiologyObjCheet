@@ -1,11 +1,12 @@
-import React from 'react'
-import Banner from './components/Banner'
-import Slider from './components/Slider'
+import React from 'react';
+import Banner from './components/Banner';
+import "./HomePage.css"
 
 function HomePage() {
     return (
         <div className="home">
             <Banner/>
+            
         </div>
     )
 }
