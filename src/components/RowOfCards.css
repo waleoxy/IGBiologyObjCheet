@@ -1,6 +1,6 @@
-.body {
-  margin-top: 70px;
-}
-.home {
+body {
   background-color: rgb(226, 223, 223);
+}
+.row {
+  width: 100%;
 }
