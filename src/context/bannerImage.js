@@ -66,7 +66,12 @@ export const bannerImage = [
         text: "This covers photosynythesis, material transport in plants as well as exchange of gases.",
         url:"img/reproduction.jpg"
     },
-
+     {
+        id: 12,
+        name: 'Living things and Life processes',
+        text: "This covers photosynythesis, material transport in plants as well as exchange of gases.",
+        url:"img/lifeprocesses.jpg"
+    },
     
 
 ]
