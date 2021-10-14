@@ -29,3 +29,32 @@ export const linkData = [
     
 
 ]
+
+export const dropdownData = [
+    {
+        id: 1,
+        text: 'Transport system',
+        path: '/'
+    },
+    {
+        id: 2,
+        text: 'Cell',
+        path: '/tutorials'
+    },
+    {
+        id: 3,
+        text: 'Homeostasis',
+        path: '/questions'
+    },
+    {
+        id: 4,
+        text: 'Life processes',
+        path: '/about'
+    },
+    {
+        id: 5,
+        text: 'Genetics',
+        path: '/resources'
+    }  
+
+]

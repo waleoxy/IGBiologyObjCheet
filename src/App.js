@@ -5,6 +5,8 @@ import {Switch, Route} from "react-router"
 import ProfilePage from './ProfilePage';
 import TutorialsPage from './TutorialsPage';
 import QuestionsPage from './QuestionsPage';
+import Resources from './Resources';
+import AboutPage from './AboutPage';
 
 function App() {
   return (
@@ -13,9 +15,10 @@ function App() {
       <Switch>
         <Route path = '/' exact component={HomePage}/>
         <Route path = '/profile'  component={ProfilePage}/>
-        <Route path = '/tutorials' exact component={TutorialsPage}/>
-        <Route path = '/questions' exact component={QuestionsPage}/>
-      
+        <Route path = '/tutorials'  component={TutorialsPage}/>
+        <Route path = '/questions'  component={QuestionsPage}/>
+        <Route path = '/resources'  component={Resources}/>
+        <Route path = '/about' component={AboutPage}/>
       </Switch>
     </div>
   );
