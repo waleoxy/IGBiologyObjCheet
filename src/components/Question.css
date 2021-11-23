@@ -1,0 +1,42 @@
+.numbering {
+  display: flex;
+  padding: 3px;
+  align-items: flex-start;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.numbering > img {
+  width: 95%;
+  object-fit: contain;
+}
+.options {
+  display: flex;
+  margin-left: 14px;
+  margin-top: 2px;
+  flex-direction: column;
+  padding: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.queDiv {
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+}
+.option {
+  margin-top: 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: lavender;
+}
+.option:hover {
+  transform: scale(0.99);
+  background-color: rgb(190, 190, 212);
+}
+.option-clicked {
+  padding: 5px 20px;
+  pointer-events: none;
+  background-color: rgb(137, 137, 216);
+}

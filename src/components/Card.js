@@ -6,8 +6,8 @@ function Card() {
     return (
         <div className="row justify-content-center">
         {bannerImage.map(image =>(
-            <div className='col-12 col-sm-6 col-md-4 col-lg-3 my-3 '>
-            <div className="card" style={{height:'29rem', width:'20rem'}}>
+            <div className='card-element col-12 col-sm-6 col-md-4 col-lg-3 my-3 '>
+            <div className="card" style={{height:'32rem', width:'20rem'}}>
             <img className="card-img-top" src={image.url} alt="image"/>
             <div className="card-body">
                 <div>

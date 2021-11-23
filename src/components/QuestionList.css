@@ -1,0 +1,5 @@
+.question__list {
+  overflow-y: scroll;
+  width: fit-content;
+  height: 78%;
+}

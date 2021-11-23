@@ -1,5 +1,5 @@
 import React from 'react';
-import {dropdownData} from "../context/dropdownDataData"
+import {dropdownData} from "../context/dropdownData"
 
 function DropdownMenu() {
     return (

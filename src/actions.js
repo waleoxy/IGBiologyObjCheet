@@ -1,0 +1,9 @@
+export const ADD = 'add';
+export const SUBTRACT_A = 'subtract_A';
+export const SUBTRACT_B = 'subtract_B';
+export const SUBTRACT_C = 'subtract_C';
+export const SUBTRACT_D = 'subtract_D';
+export const CLICKED_A = 'clicked_A'
+export const CLICKED_B = 'clicked_B'
+export const CLICKED_C = 'clicked_C'
+export const CLICKED_D = 'clicked_D'

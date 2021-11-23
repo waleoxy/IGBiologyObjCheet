@@ -1,4 +1,4 @@
-.card:hover {
+.card-element:hover {
   cursor: pointer;
   transform: scale(0.95);
   transition: ease-in 300ms;

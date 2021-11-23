@@ -1,3 +1,41 @@
 body {
-  margin-top: 70px;
+  margin-top: 69px;
+  height: 100vh;
+  overflow: hidden;
+}
+.container-fluid {
+  height: 100vh;
+}
+.leftside {
+  margin-top: 22px;
+}
+.middleside {
+  margin-top: 22px;
+  height: 100vh;
+}
+.topics__header {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-bottom: 14px;
+  color: rgb(58, 51, 51);
+}
+.topics__container {
+  background-color: white;
+}
+.topics {
+  border: 1px solid rgb(221, 219, 219);
+  margin: 0;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.topics:hover {
+  background: rgb(231, 227, 227);
+}
+.topic {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  cursor: pointer;
 }
