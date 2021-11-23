@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import { ADD, CLICKED_A, CLICKED_B, CLICKED_C, CLICKED_D,
         SUBTRACT_C, SUBTRACT_D, SUBTRACT_A, SUBTRACT_B } from '../actions';
 
-function Question({id, image, queText, isImage, isCorrect,
+function Question({id, image, queText, isImage, isCorrect,questNo,
     ansOptions, correctAns, subtract_B, subtract_A, subtract_C, subtract_D,
     clicked_A, clicked_B, clicked_C, clicked_D}){
 
@@ -13,9 +13,10 @@ function Question({id, image, queText, isImage, isCorrect,
         const [isClicked_B, setIsClicked_B] = useState(false)
         const [isClicked_C, setIsClicked_C] = useState(false)
         const [isClicked_D, setIsClicked_D] = useState(false) 
-       // const [isCorrect, setIsCorrect] = useState(false)
+        const [correct, setCorrect] = useState(false)
  
         const{A, B, C, D} = ansOptions
+
 
         const clk_A  = () => {
             setIsClicked_A(true)
@@ -25,10 +26,12 @@ function Question({id, image, queText, isImage, isCorrect,
 
             if(A === correctAns){
                 clicked_A()
-            }else if(isCorrect && A !== correctAns){
+                setCorrect(true)
+            }else if(correct &&  A !== correctAns){
                 subtract_A()
+                setCorrect(false)
             }
-            
+    
         }
       
         const clk_B  = () => {
@@ -37,11 +40,12 @@ function Question({id, image, queText, isImage, isCorrect,
             setIsClicked_C(false)
             setIsClicked_D(false)
 
-             
             if(B === correctAns){
                 clicked_B()
-            }else if(isCorrect && B !== correctAns){
+                setCorrect(true)
+            }else if(correct &&  B !==  correctAns){
                 subtract_B()
+                setCorrect(false)
             }
 
         }
@@ -54,8 +58,10 @@ function Question({id, image, queText, isImage, isCorrect,
             
             if(C === correctAns){
                 clicked_C()
-            }else if(isCorrect && C !== correctAns){
+                setCorrect(true)
+            }else if(correct &&  C !==  correctAns){
                 subtract_C()
+                setCorrect(false)
             }
 
         }
@@ -67,11 +73,15 @@ function Question({id, image, queText, isImage, isCorrect,
             
             if(D === correctAns){
                 clicked_D()
-            }else if(isCorrect && D !== correctAns){
+                setCorrect(true)
+            }else if(correct &&  D !==  correctAns){
                 subtract_D()
+                setCorrect(false)
             }
 
         }
+
+        console.log('qN', questNo);
 
     return (
          <div className="col-12 col-sm-6 col-md-4 col-lg-3 w-max justify-content-center">
@@ -108,6 +118,7 @@ const mapStateToProps = (state) => {
         isClicked_C: state.isClicked_C,
         isClicked_D: state.isClicked_D,
         isCorrect: state.isCorrect,
+        questNo:state.questNo,
     }
 }
 

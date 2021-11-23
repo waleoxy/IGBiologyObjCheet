@@ -7,6 +7,7 @@ import { questionList } from "../context/questionList";
 
 const defaultState = {
     questionList,
+    questNo: [],
     count: 0,
     isClicked_A: false,
     isClicked_B: false,
@@ -19,14 +20,16 @@ export const countReducer = (state = defaultState, action) => {
  const options =  state.questionList.ansOptions
  const correctAns = state.questionList.correctAns
 
- 
+ const qNo = questionList.map(que => que.id);
+
  
     switch (action.type) {
         case CLICKED_A:
             return{
                 ...state,
                 count: state.count + 1,
-                isCorrect: true
+                isCorrect: true,
+                 questNo: qNo,
             }  
             break;
 
@@ -34,7 +37,8 @@ export const countReducer = (state = defaultState, action) => {
              return{
                 ...state,
                 count: state.count + 1,
-                isCorrect: true
+                isCorrect: true,
+                 questNo: qNo,
             } 
             break;
 
@@ -42,7 +46,8 @@ export const countReducer = (state = defaultState, action) => {
              return{
                 ...state,
                 count: state.count + 1,
-                isCorrect: true
+                isCorrect: true,
+                 questNo: qNo,
             }
             break;
 
@@ -50,7 +55,8 @@ export const countReducer = (state = defaultState, action) => {
              return{
                 ...state,
                 count: state.count + 1,
-                isCorrect: true
+                isCorrect: true,
+                questNo: qNo,
             }
             break;
 
@@ -58,28 +64,32 @@ export const countReducer = (state = defaultState, action) => {
              return{
                 ...state,
                 count: state.count - 1,
-                isCorrect: false
+                isCorrect: false,
+                questNo: qNo,
             }
             break;
         case SUBTRACT_B:
              return{
                 ...state,
                 count: state.count - 1,
-                isCorrect: false
+                isCorrect: false,
+                questNo: qNo,
             }
             break;
         case SUBTRACT_C:
              return{
                 ...state,
                 count: state.count - 1,
-                isCorrect: false
+                isCorrect: false,
+                questNo: qNo, 
             }
             break;
         case SUBTRACT_D:
              return{
                 ...state,
                 count: state.count - 1,
-                isCorrect: false
+                isCorrect: false,
+                questNo: qNo,
             }
             break;
     
