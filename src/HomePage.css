@@ -2,5 +2,7 @@
   margin-top: 70px;
 }
 .home {
+  height: 100vh;
+  overflow-y: auto;
   background-color: rgb(226, 223, 223);
 }
